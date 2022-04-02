@@ -1,0 +1,18 @@
+{{outlet}}
+
+  <table width="100%">
+    <tr align="left">
+      <th>Id</th>
+      <th>Name</th>
+      <th>Author</th>
+      <th>Pages</th>
+    </tr>
+    {{#each model as |book|}}
+      <tr>
+        <td>{{book.ID}}</td>
+        <td>{{book.Name}}</td>
+        <td>{{book.Author}}</td>
+        <td>{{book.Pages}}</td>
+      </tr>
+    {{/each}}
+  </table>
